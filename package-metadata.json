@@ -1,0 +1,8 @@
+{
+  "dependencies": [],
+  "sublime_text": "*",
+  "url": "",
+  "platforms": ["*"],
+  "version": "1.0.1",
+  "description": "Sublime Text - Format bash files when saving"
+}
