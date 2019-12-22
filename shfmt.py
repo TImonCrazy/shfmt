@@ -21,7 +21,7 @@ settings = sublime.load_settings('shfmt.sublime-settings')
 
 class Formatter(object):
 	'''
-	Wrapper for the process used to format the Terraform file.
+  Wrapper for the process used to format the Terraform file.
 
 	:param sublime.View view: The view of the file to be formatted.
 	'''
@@ -82,7 +82,7 @@ class Formatter(object):
 		else:
 			return stdout.decode(self.encoding), None
 
-	def _show_errors(self, errors):
+  def _show_errors(self, errors):
 		'''
 		Show the stderr of a failed process in an output panel.
 
@@ -111,8 +111,8 @@ class shfmtCommand(sublime_plugin.TextCommand):
 
 		:returns: bool
 		'''
-		#return self.view.score_selector(0, 'source.bash') != 0
-return self.view.score_selector(0, 'source.bash') != 0
+		return self.view.score_selector(0, 'source.bash') != 0
+    #return self.view.score_selector(0, 'source.bash') != 0
 	def run(self, edit):
 		'''
 		Formats the current file viewed, replacing its contents.
