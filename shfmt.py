@@ -31,7 +31,7 @@ class Formatter(object):
             self._show_errors(error)
             return contents
         self._hide_errors()
-    return output
+        return output
 
     def _exec(self, stdin):
         proc = subprocess.Popen(
